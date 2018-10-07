@@ -159,7 +159,6 @@ export default {
           min-width: 11.25rem
           @media screen and (min-width: 860px)
             flex: 1 0 20%
-        margin: 0 0 0 -1rem
         .glasses
           flex: 1 0 50%
           min-width: 12.5rem
