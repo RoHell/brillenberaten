@@ -21,16 +21,16 @@
           v-for="face in faces"
           :key="face.id"
           :option="face")
-    .glasses-advise__options__navigation(:class="{next: !next}")
-      navigation-button(
-        v-if="next"
-        back
-        :disabled="isDisabled"
-        @click="goBack") ZURICK
-      navigation-button(
-        v-else
-        next
-        @click="goNext") WEITER
+      .glasses-advise__options__navigation(:class="{next: !next}")
+        navigation-button(
+          v-if="next"
+          back
+          :disabled="isDisabled"
+          @click="goBack") ZURICK
+        navigation-button(
+          v-else
+          next
+          @click="goNext") WEITER
     .glasses-advise__selected
       .glasses-advise__selected__title
         span Produkte, die Ihren Wunshen entshprehen
@@ -138,12 +138,7 @@ export default {
       padding-top: 1.25rem
       width: 100%
     .glasses-advise__options--container
-      display: flex
-      flex-direction: column
-      justify-content: flex-end
       width: 100%
-      @media screen and (min-width: 860px)
-        height: 22rem
       h2
         color: $color-primary
         text-align: center
@@ -154,6 +149,9 @@ export default {
         display: flex
         flex-flow: row wrap
         margin: 0 0 0 -1rem
+        @media screen and (min-width: 860px)
+          height: 18rem
+          align-items: flex-end
         .glasses-advise__option
           margin: 0 0 1rem 1rem
         .faces
@@ -166,13 +164,13 @@ export default {
           min-width: 12.5rem
           @media screen and (min-width: 768px)
             flex: 1 0 25%
-    .glasses-advise__options__navigation
-      display: flex
-      align-items: center
-      width: 100%
-      padding: 0 0 1rem
-    .next
-      justify-content: flex-end
+      .glasses-advise__options__navigation
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 0 0 1rem
+      .next
+        justify-content: flex-end
     .glasses-advise__selected
       width: 100%
       .glasses-advise__selected__title
