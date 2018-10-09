@@ -5,7 +5,7 @@
         h1 BRILLENBERATER
         .glasses-advise__header__subtitle In wenigen Shritten zur perfekten Brille
       .glasses-advise__header__image
-        img(:src="`data:image/png;base64, ${headerImage}`")
+        img(src="img/header_img.png")
     .glasses-advise__breadcrumbs
       bread-crumbs
     .glasses-advise__options--container

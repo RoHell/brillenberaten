@@ -1,7 +1,7 @@
 <template lang="pug">
   .selected
     .selected-glasses-image
-      img(:src="`data:image/png;base64, ${selected.image}`")
+      img(:src="selected.image")
     .selected__details
       .selected__details__title FUNCHAL
       .selected__details__attributes
