@@ -5,7 +5,7 @@
       checkbox(@checked="onCheck")
       .option__info__description
         .title(v-if="option.title") {{ option.title }}
-        .type
+        .type(:title="option.info")
           .type__text {{ option.type }}
           svg(
             xmlns='http://www.w3.org/2000/svg',

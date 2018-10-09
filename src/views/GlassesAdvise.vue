@@ -47,10 +47,9 @@ import BreadCrumbs from '../components/BreadCrumbs.vue';
 import SelectionOption from '../components/SelectionOption.vue';
 import NavigationButton from '../components/NavigationButton.vue';
 import Selected from '../components/Selected.vue';
-import faces from '../assets/faces';
-import glasses from '../assets/glasses';
-import selectedGlasses from '../assets/selectedGlasses';
-import headerImage from '../assets/header_image';
+import faces from '../utils/faces';
+import glasses from '../utils/glasses';
+import selectedGlasses from '../utils/selectedGlasses';
 
 export default {
   components: {
@@ -64,7 +63,6 @@ export default {
       glasses,
       faces,
       selectedGlasses,
-      headerImage,
       next: false,
       back: false,
       swap: false,
